@@ -100,7 +100,7 @@ class Discriminator(nn.Module):
         return validity
 Step 7: Initializing GAN Components
 •	Generator and Discriminator are initialized on the available device (GPU or CPU).
-•	Binary Cross-Entropy (BCE) Loss is chosen as the loss function.
+•	Binary Cross-Entropy (BCE) Loss is chosen as the loss function
 •	Adam optimizers are defined separately for the generator and discriminator with specified learning rates and betas.
 generator = Generator(latent_dim).to(device)discriminator = Discriminator().to(device)
 adversarial_loss = nn.BCELoss()
